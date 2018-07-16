@@ -1,0 +1,653 @@
+{
+  "meta": {
+    "code": 200,
+    "requestId": "5b4b97bcdd57974d373ba7e3"
+  },
+  "response": {
+    "venues": [
+      {
+        "id": "556601e8498e9de3161bd7ea",
+        "name": "Cannibale Royale",
+        "contact": {},
+        "location": {
+          "address": "Ruysdaelkade 149",
+          "lat": 52.353594346920424,
+          "lng": 4.887073935860933,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 52.353594346920424,
+              "lng": 4.887073935860933
+            }
+          ],
+          "distance": 18212,
+          "postalCode": "1072XM",
+          "cc": "NL",
+          "neighborhood": "Oude Pijp",
+          "city": "Amsterdam",
+          "state": "Noord-Holland",
+          "country": "Nederland",
+          "formattedAddress": [
+            "Ruysdaelkade 149",
+            "1072XM Amsterdam",
+            "Nederland"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16c941735",
+            "name": "Burger Joint",
+            "pluralName": "Burger Joints",
+            "shortName": "Burgers",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "tipCount": 0,
+          "usersCount": 0,
+          "checkinsCount": 0,
+          "visitsCount": 0
+        },
+        "beenHere": {
+          "count": 0,
+          "lastCheckinExpiredAt": 0,
+          "marked": false,
+          "unconfirmedCount": 0
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1531680701",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4a2704b9f964a52008861fe3",
+        "name": "Burger Bar",
+        "contact": {},
+        "location": {
+          "address": "Kolksteeg 2",
+          "lat": 52.37615284453963,
+          "lng": 4.895500064154142,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 52.37615284453963,
+              "lng": 4.895500064154142
+            }
+          ],
+          "distance": 18665,
+          "postalCode": "1012 PT",
+          "cc": "NL",
+          "city": "Amsterdam",
+          "state": "Noord-Holland",
+          "country": "Nederland",
+          "formattedAddress": [
+            "Kolksteeg 2",
+            "1012 PT Amsterdam",
+            "Nederland"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16c941735",
+            "name": "Burger Joint",
+            "pluralName": "Burger Joints",
+            "shortName": "Burgers",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "tipCount": 0,
+          "usersCount": 0,
+          "checkinsCount": 0,
+          "visitsCount": 0
+        },
+        "beenHere": {
+          "count": 0,
+          "lastCheckinExpiredAt": 0,
+          "marked": false,
+          "unconfirmedCount": 0
+        },
+        "hereNow": {
+          "count": 1,
+          "summary": "One other person is here",
+          "groups": [
+            {
+              "type": "others",
+              "name": "Other people here",
+              "count": 1,
+              "items": []
+            }
+          ]
+        },
+        "referralId": "v-1531680701",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4b365b91f964a520883325e3",
+        "name": "Burger Bar",
+        "contact": {},
+        "location": {
+          "address": "Reguliersbreestraat 9",
+          "crossStreet": "Muntplein",
+          "lat": 52.366963858869966,
+          "lng": 4.893953520454415,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 52.366963858869966,
+              "lng": 4.893953520454415
+            }
+          ],
+          "distance": 18321,
+          "postalCode": "1017 CL",
+          "cc": "NL",
+          "city": "Amsterdam",
+          "state": "Noord-Holland",
+          "country": "Nederland",
+          "formattedAddress": [
+            "Reguliersbreestraat 9 (Muntplein)",
+            "1017 CL Amsterdam",
+            "Nederland"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16c941735",
+            "name": "Burger Joint",
+            "pluralName": "Burger Joints",
+            "shortName": "Burgers",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "tipCount": 0,
+          "usersCount": 0,
+          "checkinsCount": 0,
+          "visitsCount": 0
+        },
+        "beenHere": {
+          "count": 0,
+          "lastCheckinExpiredAt": 0,
+          "marked": false,
+          "unconfirmedCount": 0
+        },
+        "hereNow": {
+          "count": 3,
+          "summary": "3 people are here",
+          "groups": [
+            {
+              "type": "others",
+              "name": "Other people here",
+              "count": 3,
+              "items": []
+            }
+          ]
+        },
+        "referralId": "v-1531680701",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4a26ff64f964a5206a7f1fe3",
+        "name": "Hard Rock Cafe Amsterdam",
+        "contact": {},
+        "location": {
+          "address": "Max Euweplein 57-61",
+          "lat": 52.36223661716584,
+          "lng": 4.882962948118591,
+          "distance": 18807,
+          "postalCode": "1017 MA",
+          "cc": "NL",
+          "city": "Amsterdam",
+          "state": "Noord-Holland",
+          "country": "Nederland",
+          "formattedAddress": [
+            "Max Euweplein 57-61",
+            "1017 MA Amsterdam",
+            "Nederland"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d14e941735",
+            "name": "American Restaurant",
+            "pluralName": "American Restaurants",
+            "shortName": "American",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": true,
+        "stats": {
+          "tipCount": 0,
+          "usersCount": 0,
+          "checkinsCount": 0,
+          "visitsCount": 0
+        },
+        "beenHere": {
+          "count": 0,
+          "lastCheckinExpiredAt": 0,
+          "marked": false,
+          "unconfirmedCount": 0
+        },
+        "hereNow": {
+          "count": 3,
+          "summary": "3 people are here",
+          "groups": [
+            {
+              "type": "others",
+              "name": "Other people here",
+              "count": 3,
+              "items": []
+            }
+          ]
+        },
+        "referralId": "v-1531680701",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "5a8bf67251950e7c14bb47e2",
+        "name": "Five Guys",
+        "contact": {},
+        "location": {
+          "address": "Stationsplein",
+          "lat": 52.09051783472626,
+          "lng": 5.110678498858124,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 52.09051783472626,
+              "lng": 5.110678498858124
+            }
+          ],
+          "distance": 23404,
+          "postalCode": "3511 ED",
+          "cc": "NL",
+          "city": "Utrecht",
+          "state": "Utrecht",
+          "country": "Nederland",
+          "formattedAddress": [
+            "Stationsplein",
+            "3511 ED Utrecht",
+            "Nederland"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16c941735",
+            "name": "Burger Joint",
+            "pluralName": "Burger Joints",
+            "shortName": "Burgers",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "tipCount": 0,
+          "usersCount": 0,
+          "checkinsCount": 0,
+          "visitsCount": 0
+        },
+        "beenHere": {
+          "count": 0,
+          "lastCheckinExpiredAt": 0,
+          "marked": false,
+          "unconfirmedCount": 0
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1531680701",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "5812609038fa9dde7f5b7cd2",
+        "name": "The Butcher Social Club",
+        "contact": {},
+        "location": {
+          "address": "Overhoeksplein 1",
+          "lat": 52.383723719570106,
+          "lng": 4.902311714969054,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 52.383723719570106,
+              "lng": 4.902311714969054
+            }
+          ],
+          "distance": 18659,
+          "postalCode": "1031 KS",
+          "cc": "NL",
+          "city": "Amsterdam",
+          "state": "Noord-Holland",
+          "country": "Nederland",
+          "formattedAddress": [
+            "Overhoeksplein 1",
+            "1031 KS Amsterdam",
+            "Nederland"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16c941735",
+            "name": "Burger Joint",
+            "pluralName": "Burger Joints",
+            "shortName": "Burgers",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "tipCount": 0,
+          "usersCount": 0,
+          "checkinsCount": 0,
+          "visitsCount": 0
+        },
+        "beenHere": {
+          "count": 0,
+          "lastCheckinExpiredAt": 0,
+          "marked": false,
+          "unconfirmedCount": 0
+        },
+        "hereNow": {
+          "count": 1,
+          "summary": "One other person is here",
+          "groups": [
+            {
+              "type": "others",
+              "name": "Other people here",
+              "count": 1,
+              "items": []
+            }
+          ]
+        },
+        "referralId": "v-1531680701",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "57910d45498eeaf3c1c08128",
+        "name": "Cannibale Royale",
+        "contact": {},
+        "location": {
+          "address": "Lange Niezel 15",
+          "lat": 52.37503133828516,
+          "lng": 4.898690115430672,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 52.37503133828516,
+              "lng": 4.898690115430672
+            }
+          ],
+          "distance": 18416,
+          "postalCode": "1012 GS",
+          "cc": "NL",
+          "neighborhood": "De Wallen",
+          "city": "Amsterdam",
+          "state": "Noord-Holland",
+          "country": "Nederland",
+          "formattedAddress": [
+            "Lange Niezel 15",
+            "1012 GS Amsterdam",
+            "Nederland"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16c941735",
+            "name": "Burger Joint",
+            "pluralName": "Burger Joints",
+            "shortName": "Burgers",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "tipCount": 0,
+          "usersCount": 0,
+          "checkinsCount": 0,
+          "visitsCount": 0
+        },
+        "beenHere": {
+          "count": 0,
+          "lastCheckinExpiredAt": 0,
+          "marked": false,
+          "unconfirmedCount": 0
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1531680701",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "57fb6977498e9e77b6cbd949",
+        "name": "The Butcher",
+        "contact": {},
+        "location": {
+          "address": "Paleisstraat 14",
+          "lat": 52.37234362870291,
+          "lng": 4.889451833400808,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 52.37234362870291,
+              "lng": 4.889451833400808
+            }
+          ],
+          "distance": 18848,
+          "cc": "NL",
+          "country": "Nederland",
+          "formattedAddress": [
+            "Paleisstraat 14",
+            "Nederland"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16c941735",
+            "name": "Burger Joint",
+            "pluralName": "Burger Joints",
+            "shortName": "Burgers",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "tipCount": 0,
+          "usersCount": 0,
+          "checkinsCount": 0,
+          "visitsCount": 0
+        },
+        "beenHere": {
+          "count": 0,
+          "lastCheckinExpiredAt": 0,
+          "marked": false,
+          "unconfirmedCount": 0
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1531680701",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4cceb56aba0a548146504a59",
+        "name": "Lombardo's",
+        "contact": {},
+        "location": {
+          "address": "Nieuwe Spiegelstraat 50",
+          "lat": 52.363517592906334,
+          "lng": 4.888746788870352,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 52.363517592906334,
+              "lng": 4.888746788870352
+            }
+          ],
+          "distance": 18496,
+          "postalCode": "1017 DG",
+          "cc": "NL",
+          "neighborhood": "Grachtengordel-Zuid",
+          "city": "Amsterdam",
+          "state": "Noord-Holland",
+          "country": "Nederland",
+          "formattedAddress": [
+            "Nieuwe Spiegelstraat 50",
+            "1017 DG Amsterdam",
+            "Nederland"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16c941735",
+            "name": "Burger Joint",
+            "pluralName": "Burger Joints",
+            "shortName": "Burgers",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "tipCount": 0,
+          "usersCount": 0,
+          "checkinsCount": 0,
+          "visitsCount": 0
+        },
+        "beenHere": {
+          "count": 0,
+          "lastCheckinExpiredAt": 0,
+          "marked": false,
+          "unconfirmedCount": 0
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1531680701",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "5336fe68498e18d7e65f5803",
+        "name": "Cannibale Royale",
+        "contact": {},
+        "location": {
+          "address": "Handboogstraat 17-A",
+          "lat": 52.36794577878491,
+          "lng": 4.8902845625146085,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 52.36794577878491,
+              "lng": 4.8902845625146085
+            }
+          ],
+          "distance": 18594,
+          "postalCode": "1012 XM",
+          "cc": "NL",
+          "neighborhood": "Stadsdeel Centrum",
+          "city": "Amsterdam",
+          "state": "Noord-Holland",
+          "country": "Nederland",
+          "formattedAddress": [
+            "Handboogstraat 17-A",
+            "1012 XM Amsterdam",
+            "Nederland"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16c941735",
+            "name": "Burger Joint",
+            "pluralName": "Burger Joints",
+            "shortName": "Burgers",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "tipCount": 0,
+          "usersCount": 0,
+          "checkinsCount": 0,
+          "visitsCount": 0
+        },
+        "beenHere": {
+          "count": 0,
+          "lastCheckinExpiredAt": 0,
+          "marked": false,
+          "unconfirmedCount": 0
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1531680701",
+        "venueChains": [],
+        "hasPerk": false
+      }
+    ],
+    "confident": true
+  }
+}

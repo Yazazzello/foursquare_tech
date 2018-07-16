@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-allopen'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.yazazzello.adyen"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resConfigs "en"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            versionNameSuffix " Debug"
+            aaptOptions.cruncherEnabled = false
+        }
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    dataBinding {
+        enabled = true
+    }
+    signingConfigs {
+
+        debug {
+            storeFile file("../debug.keystore")
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+}
+
+dependencies {
+    final SUPPORT_LIBRARY_VERSION = '27.1.1'
+    final RX_ANDROID_VERSION = '2.0.2'
+    final RX_JAVA = '2.1.16'
+    final TIMBER_VERSION = '4.6.1'
+    final RETROFIT_VERSION = '2.4.0'
+    final LEAKCANARY_VERSION = '1.5.4'
+    final HAMCREST_VERSION = '1.3'
+    final MOCKITO_KOTLIN_VERSION = '1.4.0'
+    final OK_HTTP_VERSION = '3.9.1'
+    final KOIN_VERSION = '0.9.3'
+    final PICASSO_VERSION = '2.5.2'
+
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.google.android.gms:play-services-location:15.0.1"
+    implementation "com.google.android.gms:play-services-maps:15.0.1"
+    implementation "com.android.support.constraint:constraint-layout:1.1.2"
+    implementation "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
+    implementation "io.reactivex.rxjava2:rxandroid:$RX_ANDROID_VERSION"
+    implementation "io.reactivex.rxjava2:rxjava:$RX_JAVA"
+    implementation "com.jakewharton.timber:timber:$TIMBER_VERSION"
+    implementation "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
+    implementation "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$RETROFIT_VERSION"
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    implementation "com.squareup.okhttp3:okhttp:$OK_HTTP_VERSION"
+    implementation "com.squareup.okhttp3:logging-interceptor:$OK_HTTP_VERSION"
+    implementation "com.squareup.picasso:picasso:$PICASSO_VERSION"
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$LEAKCANARY_VERSION"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$LEAKCANARY_VERSION"
+    // Koin
+    implementation "org.koin:koin-android:$KOIN_VERSION"
+
+    // tests dependencies
+    testImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$LEAKCANARY_VERSION"
+    testImplementation "org.koin:koin-test:$KOIN_VERSION"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    testImplementation "junit:junit:4.12"
+    testImplementation "org.mockito:mockito-core:2.8.47"
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    testImplementation "org.hamcrest:hamcrest-core:$HAMCREST_VERSION"
+    testImplementation "org.hamcrest:hamcrest-library:$HAMCREST_VERSION"
+    testImplementation "org.hamcrest:hamcrest-integration:$HAMCREST_VERSION"
+    testImplementation "com.nhaarman:mockito-kotlin:$MOCKITO_KOTLIN_VERSION"
+
+
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion SUPPORT_LIBRARY_VERSION
+                }
+            }
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}

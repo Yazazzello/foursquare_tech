@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="photoUrl"
+            type="String"/>
+
+        <variable
+            name="venue"
+            type="com.yazazzello.adyen.restapi.models.VenuesResponses.Response.Venue"/>
+
+        <variable
+            name="venueListener"
+            type="com.yazazzello.adyen.features.foursquare.VenueListener"/>
+
+        <variable
+            name="venueTypes"
+            type="java.util.List&lt;com.yazazzello.adyen.features.foursquare.VenueButtonViewModel&gt;"/>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="60dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+            app:venueListener="@{venueListener}"
+            app:venueTypes="@{venueTypes}"
+            >
+
+            <TextView
+                android:id="@+id/button1"
+                style="@style/venueButtonStyle"
+                tools:text="Cafes"/>
+
+            <TextView
+                android:id="@+id/button2"
+                style="@style/venueButtonStyle"
+                tools:text="Dessert Shops"/>
+
+            <TextView
+                android:id="@+id/button3"
+                style="@style/venueButtonStyle"
+                tools:text="Burgers"/>
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:imageUrl="@{photoUrl}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:text="@{venue.name}"
+                app:layout_constraintBottom_toTopOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="@tools:sample/cities"
+                style="@style/textWithShadow"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/textWithShadow"
+                android:text="@{venue.location.address}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="@tools:sample/cities"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</layout>
